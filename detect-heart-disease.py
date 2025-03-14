@@ -14,8 +14,8 @@ df = pd.read_csv("dataset.csv")
 df = df.dropna()  # Drop missing values if any
 
 # Split into features and target
-X = df.drop("class target", axis=1)
-y = df["class target"]
+X = df.drop("target", axis=1)
+y = df["target"]
 
 # Standardize numerical features
 scaler = StandardScaler()
